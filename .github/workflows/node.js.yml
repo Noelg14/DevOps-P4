@@ -48,9 +48,8 @@ jobs:
         with:
           name: node-build
           path: public
-      - name: intall
-      - run: |
-          npm install
-          npm test
-      - run: npm test
+      - name: install
+        run: npm install
+      - name: Test
+        run: npm test
     
